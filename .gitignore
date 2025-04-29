@@ -47,10 +47,8 @@
 *.sdf
 # Solution Files
 *.sln
-# VSCode Cache Directory
-.vscode
-# VSCode History Files
-**/.history
+# VS JSON File
+.vsconfig
 
 # Precompiled Assets
 SourceArt/**/*.png
