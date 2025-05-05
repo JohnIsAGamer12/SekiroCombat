@@ -1,0 +1,70 @@
+Sekiro-Like Combat System:
+
+
+* Player Experience Goal:
+	* The Goal is to create an experience that makes the player feel like a Shinobi who is Agile and a master at the sword.
+	
+* Player vs Enemy/Boss Experience:
+	* The fights between the enemy and the player when engage in combat should feel like a dance, so more like a rythm game where the player is in sync with what the enemy's attacks are, in order to be rewarded of breaking their posture or bringing their vitality all the way down to zero. 
+	* Boss fights it's a little more complex as they are more stronger enemies where they usually have to be death blown more than once.
+
+* Stealth Combat
+	* Detection Indicator
+		* Patrol: The Enemy is in a Idle state or on a path.
+		* Suspicious: The Enemy heard a noise or detect something that looks like a player.
+		* Hostile: The Enemy found the Player and engages in combat.
+	
+* Player Combat Mechanics
+	* Omni-Directional Dodging:
+		* In Four Direction the Player can Step-Dash with I-Frames upon Any Enemy Attack.
+		
+	* Perfect Dodge:
+		* Upon press the dodge perfectly if the enemy's sword comes close to the Player's hit box can leave the enemy exposed and staggered.
+		
+	* Anticipate and Counter
+		* It is a powerful Martial Arts Counter that is default by the player as on time he'll stomp on an Enemies thrust attack dealing Heavy Posture Damage.
+		
+	* One & Only Weapon:
+		* Katana (Sword): Primary weapon for the Player
+			* Attacks: 
+				* A standard 5 Hit-Combo Attack: a Simple Over head Slash, Upper Slash, a 360 Slash to the left, adn then right, and one final Overhead.
+				* Thurst attack: Upon the Player holding down the attack button, for a certain amount of seconds to create anticipation they'll unleash a thrust that can deal heavy damage both Vitality and Posture.
+				* Dodge and Slash: The Slash occurs after the dodge, if the player commits a perfect dodge, the dodge and slash can deal heavy posture damage.
+			* Block: Block stance that can be held in all directions, player might reduce Damage but still takes posture damage and increases chance of Stance breaking.
+			* Deflect: a parry that will inflict big Posture Damage on the enemy/boss that will open them to a Finisher/Deathblow.
+			* Counter-Slash: Upon a deflect the Player can counter with big posture Damage.
+		
+	* Recovery System
+		* When the Player takes a few hits or a big hit from the Enemy, they stagger and give them some I-Frames until they hit dodge/roll out in a recovery state.
+		* However, The Player must be careful, as some enemies can make an attempt for a huge critical deathblow that might kill them.
+		
+	* Combat Skill (For now Just One)
+		* Tornado Attack: The Player slashes up in the air and comes down with one final slash.
+	* Prothestic Weapons: A Secondary Weapon for the player to use other than the Sword
+		* Grapple Hook: Can be used for both Traversal and Grabbing Enemies Close to them.
+	
+	* Shinobi Art Skill (For Now Just Two)
+		* Combat Skill Follow-Up: After the Player executes a combat skill before the end of it's animation will then execute a dash forward along with a Slash.
+		* Prothestic Follow-Up: After a Player Executes a Prothestic they can follow up a powerful Upper-Slash Attack.
+		
+* Player Skill Tree (Just to make things simple we will only have one Combat Skill just so I can find a good structure of how I can easily implement in a combat skill)
+	* Combat Skill Tree: this is a Skill tree that is based on Combat skill that are used by the Sword.
+	* Shinobi Art Skill Tree: This is a Skill tree that is based on only Character Skill that can be applied to either Defense, or Offense (Sword or Prothestic).
+
+* Enemy AI for Combat
+	* Behavior Tree
+		* Root
+			* Select (Blackboard the Detection State)
+				* Left - Hostile
+				* Middle - Suspicious
+				* Right - Idle
+	* Attack Wheel
+		* Regular Attacks: Normal Attack Combos that the Enemy has in the Wheel
+		* Perilous Attacks: A special attack that cannot be Guarded
+			* Thrust Attacks: Cannot Be Guard, Could be Deflected, but the best Counter is the Anticipate and Counter Skill
+			* Sweeps: Sweeps is a powerful 180-360 Horizontal Slash, that is impossible to Counter with his Sword, so the best counter would be to perfect dodge or jump it.
+			* Grab Attacks: A Special attack that is a punishing attack aganist the player if it's not avoided. Cannot be guarded, Deflected. But Can be Counter with a perfect dodge.
+
+* Damage/Posture System: 
+	* Vitality: How much Health a Character has based on a hidden value
+	* Posture: How much a character can endure anothers, if it builds up 100% they stagger and be open to a instant deathblow.

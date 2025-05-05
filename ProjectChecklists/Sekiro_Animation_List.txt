@@ -1,0 +1,58 @@
+Sekiro Animation List
+
+Player Animation
+
+* Traversal
+	* Walk
+	* Jog
+	* Omni-Directional Strafe
+	* Stright Dash
+	* Omni-Direction Dash
+	* Sprint
+* Combat
+	* 5 Hit-Combo: (Overhead, Upper Head, Right Slash, Left Slash, Overhead).
+	* Anticipate Thrust: Holds the Crescendo of the thrust.
+	* Thrusting: Unleashes the Thrust from the Crescendo of the Attack.
+	* Spinning Slash (After the Dodge)
+		* Spin to the right and slash to the left.
+		* Spin to the left and slash to the right.
+	* Guards
+		* Start Guarding
+		* Guarding Idle
+		* Guarding Walk
+		* Guarding Omni-Direction Strafe
+		* End Guarding
+		* Guard Hit React
+			* Hit Left
+			* Hit Right
+			* Stance Break
+	* Deflects
+		* Deflect Left
+		* Deflect Right
+		* Big Deflection
+			* Pushes the Player Back by slamming it's blade into the ground
+	* Counter Slash:
+		* Deflect Left into Spinning right and slash left
+		* Deflect Right into Spinning left and slash right
+	* Anticipate & Counter
+		* The Player uses it's left foot to push the Enemies Blade into the ground, if the enemies posture hasn't break, it retracts it's blade to regain stance.
+	* Deathblows on Small Enemies
+		* From Behind through the Shoulder
+		* In Front, Grab the Neck through the Neck
+		* After Anticipate & Counter, the Player Stomps on their back and impales the enemy into their back.
+	* Deathblows on stronger Enemies
+		* From Behind, jump on their shoulders and through the neck.
+		* In Front knock it with the shoulder and pierce throgh the left side of the chest
+		* After Anticipate & Counter, The Player Spins to it's back and imaples their neck throughly.
+		
+Enemy Animations
+
+* Traversal
+	* Walk
+	* Jog
+	* Omni-Directional Strafe
+* Combat
+	* Attack
+	* Guard
+	* Deflects and Counter
+	
